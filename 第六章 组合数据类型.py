@@ -12,7 +12,7 @@
 
 
 '''
-集合类型-set
+集合类型-set {}
 Python 语言中的集合类型与数学中的集合概念一致
 集合用来存储**无序并且**不重复的数据
 集合中元素的类型只能是不可变数据类型，如:整数、浮点数、字符串、元组等
@@ -89,4 +89,169 @@ print(5 not in s)
 t = set()
 print(t)
 print(type(t))
+
+
+创建空集合只能用t = set()和 t= set({})
 '''
+
+
+'''
+序列类型
+
+序列类型用来存储有序并且可以重复的数据，分别为以下两种类型类型
+列表(list)
+元组(tuple)
+
+'''
+
+
+'''
+列表-list []
+ls = ['s', 's', 'r', 666, 666]
+print(ls)
+print(type(ls))
+'''
+
+
+'''
+列表类型-列表索引
+索引用来表示列表中元素的所在位置
+基于位置，可以快速找到其对应的列表元素
+如果一个列表中有n个字符
+那么案引的取值范国是0~n-1
+<列表或列表变量>[索引]
+
+ls = ['s', 's', 'r', 666, 666]
+print(ls[0])
+print(ls[0:3])
+
+
+'''
+
+
+'''
+ls = [1, 2, 3, '123', [1, 2, 3]]
+print(ls[4])
+print(ls[4][2])
+
+'''
+
+
+'''
+函数
+
+x in s
+如果 x是s的元素,返回 True,否则返回 False
+x not in s
+如果 x不是s的元素,返回 True,否则返回 False
+len(s)
+返回列表 s的元素个数
+min(s)
+返回列表 s 中的最小元素
+max(s)
+返回列表 s 中的最大元素
+
+s = [123, 234, 345]
+t = ['s','ss']
+
+print(123 in s)
+print(123 not in s)
+print(max(s))
+print(min(s))
+print(len(s))
+print(max(t))
+print(min(t))
+print(len(t))
+
+
+都可以创建空列表
+ls = list
+ls = []
+ls = list([])
+'''
+
+'''
+函数或方法
+ls.append(x)
+在列表 1s 末尾处理添加一个新元素x
+
+ls.insert(i,x)
+在列表 1s 第 i 位增加元素x
+
+ls .clear()
+清空列表 1s 中所有元素
+
+1s.pop(i)
+将列表 1s 中第i 个元素删除
+
+1s.remove(x)
+
+将列表中出现的第一个元素 x删除
+1s.reverse()
+将列表 1s 中的元素反转
+
+ls.index(x)
+列表 1s 中第一次出现元素x的位置
+
+ls.count(x)
+列表 1s 中出现 x的总次数返回一个新列表
+
+
+1s.copy()
+复制1s中所有元素
+
+
+ls = [1, 2, 3, 3, 2, 1]
+ls.append(1)
+print(ls)
+ls.insert(2,2)
+print(ls)
+ls.pop(3)
+print(ls)
+ls.remove(2)
+print(ls)
+ls.reverse()
+print(ls)
+ls1=ls.count(1)
+print(ls1)
+ls1 = ls.index(1)
+ls2 = ls.index(2)
+ls3 = ls.index(3)
+print(ls1,ls2,ls3)
+ls4 = ls.copy()
+print(ls4)
+ls4[1]=2.5
+print(ls4)
+print(ls)
+ls.clear()
+print(ls)
+
+
+'''
+
+
+
+'''
+元组类型-tuple
+元组一旦定义就不能修改。
+元组类型使用()来表示，例:t=(123,3.14,123,"abe")
+
+t = (123, 3.14 ,123 ,'abc')
+print(t)
+t1 = ()
+print(t1)
+print(type(t1))
+'''
+'''
+元组可用函数
+len(t)
+min(t)
+max(t)
+ls.index(x)
+ls.count(x)
+
+
+'''
+
+
+
