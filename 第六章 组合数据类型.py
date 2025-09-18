@@ -255,3 +255,116 @@ ls.count(x)
 
 
 
+'''
+ls = {1 ,2 ,3 ,4 ,5 ,6 ,7}
+for i in ls
+    print(i)
+
+ls = [1 ,2 ,3 ,4 ,5 ,6 ,7]
+ls.reverse()
+for i in ls:
+    print(i)
+
+'''
+
+
+
+
+'''
+字典类型-字典的定义
+字典类型数据主要以“键值对”的形式存储，类似汉语字典的目录形式。
+具体定义格式如下
+[<键1>:<值1>,<键2>:<值2>，…,<键n>:<值n>}
+
+d = {'2000':'first', '2001':'sceond', '2002':'third'}
+print(d['2000'])
+d['2000'] = 'uno'
+print(d['2000'])
+d['2003'] = 'forth'
+print(d['2003'])
+'''
+
+
+'''
+索引函数
+len()
+max()
+min()
+查的是key ，与后面对应值无关
+
+d = {'2aaa':'first', 'a001':'sceond', 'a002':'third'}
+
+print(len(d))
+print(min(d))
+print(max(d))
+'''
+
+
+'''
+函数或方法
+
+
+d. keys
+返回所有的键信息
+
+d.values()
+返回所有的值信息
+
+d.items()
+返回所有的键值对
+
+d.get(key,default)
+键存在则返回相应值，
+否则返回默认值defau1t
+
+d.pop(key, default)
+键存在则删除相应键值对，
+并返回相应值，
+否则返回默认值defau1t
+
+d.popitem()
+随机从字典中取出一个键值对，
+以元组(key,value)形式返回，
+同时将该键值对从字典中删除。
+
+d.clear()
+清空字典 d 中所有键值对
+
+
+
+
+
+d = {'000':'first', '001':'sceond', '002':'third'}
+
+
+d = {'000':'first', '001':'sceond', '002':'third'}
+print(d.keys())
+print(d.values())
+print(d.items())
+
+
+for i in d:
+    print(i)
+for i in d.values():
+    print(i)
+for i in d.items():
+    print(i[0],i[1])
+#此处i为元组
+for K,V in d.items():
+    print(K,V)
+
+
+print(d.get('003','NONE'))
+print(d.get('000','NONE'))
+
+print(d.pop('000','none'))
+print(d.pop('000','already pop'))
+print(d)
+d['000']='first'
+print(d)
+
+d1 = d.popitem()
+print(d1)
+print(d)
+
+'''
