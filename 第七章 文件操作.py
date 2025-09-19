@@ -103,9 +103,99 @@ offset的值:0为文件开头;
 1为从当前位置开始;
 2为文件结尾
 
+相对路径
+相对于当前编写的代码的位置
+a/b
+绝对路径
+path = 'E:/Python study 2025/teach.txt'
 
-'''
-f = open('teach.txt','rt')
+
+
+\n 换行
+\t tab
+\\ \
+
+
+
+path = 'E:/Python study 2025/teach.txt'
+f = open(path,'rt',encoding='utf-8')
 s = f.read()
 f.close()
 print(s)
+
+path = 'E:/Python study 2025/teach.txt'
+f = open(path,'rt',encoding='utf-8')
+s = f.read(3)
+f.close()
+print(s)
+
+path = 'E:/Python study 2025/teach.txt'
+f = open(path,'rt',encoding='utf-8')
+s = f.readline(2)
+print(s)
+s = f.readline()
+f.close()
+print(s)
+
+
+path = 'E:/Python study 2025/teach.txt'
+f = open(path,'rt',encoding='utf-8')
+s = f.readlines(1)
+print(s)
+f.close()
+print(type(s))
+
+
+
+path = 'E:/Python study 2025/teach.txt'
+f = open(path,'rt',encoding='utf-8')
+s = f.read()
+print(s)
+f.seek(0)
+s = f.readlines()
+print(s)
+f.close()
+'''
+
+
+'''
+写
+
+f.write(s)向文件写入一个字符串或者字节流
+
+
+f.witrlines(lines) 将一个元素为字符串的列表整体写入文件
+
+
+path = 'E:/Python study 2025/new.txt'
+f = open(path,'w')
+f.write('明天就要考试了\n')
+f.write('希望可以过\n')
+f.write('20250919')
+f.close()
+
+
+f = open(path,'a')
+f.write('明天就要考试了\n')
+f.write('希望可以过\n')
+f.write('20250919')
+f.close()
+'''
+
+'''
+一维数据
+
+
+
+二维数据
+
+
+
+
+'''
+path = 'E:/Python study 2025/new.csv'
+f = open(path,'a')
+a = ['1','2','3']
+s = ','.join(a)
+f.write(s)
+f.close()
