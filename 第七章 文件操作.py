@@ -193,9 +193,31 @@ f.close()
 
 
 '''
-path = 'E:/Python study 2025/new.csv'
-f = open(path,'a')
+'''
+path = 'E:/Python study 2025/excel.csv'
+f = open( path , 'w' )
 a = ['1','2','3']
 s = ','.join(a)
+print(s)
 f.write(s)
 f.close()
+
+f = open( path , 'r' )
+info = f.read()
+f.close()
+ls = info.split(',')
+print(ls)
+
+'''
+a = [
+['1','2','3','4'],
+['5','6','7','8']
+]
+print(a)
+path = 'E:/Python study 2025/excel.csv'
+f = open(path ,'w')
+for row in a:
+    s = ','.join(row)
+    print(s)
+    print(type(s))
+    f.write(s+ '\n')
